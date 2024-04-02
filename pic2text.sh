@@ -4,6 +4,7 @@
   # on kde: spectacle
   # on x11: xsel
   # on wayland: wl-clipboard
+  # taken from https://news.ycombinator.com/item?id=39711621
 
   die(){
   notify-send "$1"
