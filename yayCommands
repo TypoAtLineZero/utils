@@ -1,0 +1,13 @@
+# Systemupdate
+yay -Syu
+
+# Remove specific package
+yay -Rcns PACKAGE
+
+# Install specific package without update (not recommended)
+yay -S PACKAGE
+
+# Removed unused packages
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -Qqd | pacman -Rsu --print -
+sudo pacman -Qqd | sudo pacman -Rsu -
